@@ -1,13 +1,13 @@
 package org.momo;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-    }
+import org.momo.automation.log.Logger;
+
+
+public class App {
+	
+	
+	public static void main(String[] args) {
+		Logger.info("infomessage");
+		Logger.error("adfadfaerror");
+	}
 }

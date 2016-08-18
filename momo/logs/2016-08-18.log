@@ -1,0 +1,4 @@
+2016-08-18 14:44:56 630 [INFO ] org.momo.automation.log.Logger.info(Logger.java:6)
+infomessage
+2016-08-18 14:44:56 632 [ERROR] org.momo.automation.log.Logger.error(Logger.java:14)
+adfadfaerror
