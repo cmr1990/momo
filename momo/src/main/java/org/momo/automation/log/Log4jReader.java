@@ -20,14 +20,14 @@ public class Log4jReader {
 
 	}
 
-	public static Log4jReader getLog4jReader() {
+	protected static Log4jReader getLog4jReader() {
 		if (Log4jReader.instance == null)
 			return new Log4jReader();
 		else
 			return Log4jReader.instance;
 	}
 
-	public org.apache.log4j.Logger getLog4j() {
+	protected org.apache.log4j.Logger getLog4j() {
 		if (this.log4j == null) {
 			PropertyConfigurator.configure(readConfig());
 			this.log4j = org.apache.log4j.Logger.getLogger(Log4jReader.class);
@@ -41,7 +41,8 @@ public class Log4jReader {
 			prop.load(new FileInputStream(this.Log4j_Configuration_Path));
 			String logNameKey = this.getPropertiesFileKey(prop);
 			if (logNameKey != null) {
-				prop.setProperty(this.getPropertiesFileKey(prop), "logs/" + DateUtils.getTime("yyyy-MM-dd") + ".log");
+				prop.setProperty(this.getPropertiesFileKey(prop), 
+						"logs/" + DateUtils.getTime("yyyy-MM-dd") + ".log");
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
