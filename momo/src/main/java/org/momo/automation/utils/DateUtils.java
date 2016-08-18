@@ -1,4 +1,4 @@
-package org.momo.utils;
+package org.momo.automation.utils;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

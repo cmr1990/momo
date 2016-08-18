@@ -2,3 +2,11 @@
 infomessage
 2016-08-18 14:44:56 632 [ERROR] org.momo.automation.log.Logger.error(Logger.java:14)
 adfadfaerror
+2016-08-18 14:46:53 156 [INFO ] org.momo.automation.log.Logger.info(Logger.java:6)
+infomessage
+2016-08-18 14:46:53 158 [ERROR] org.momo.automation.log.Logger.error(Logger.java:14)
+adfadfaerror
+2016-08-18 14:46:55 558 [INFO ] org.momo.automation.log.Logger.info(Logger.java:6)
+infomessage
+2016-08-18 14:46:55 561 [ERROR] org.momo.automation.log.Logger.error(Logger.java:14)
+adfadfaerror

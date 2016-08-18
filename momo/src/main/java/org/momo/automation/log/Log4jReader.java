@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.apache.log4j.PropertyConfigurator;
-import org.momo.utils.DateUtils;
+import org.momo.automation.utils.DateUtils;
 
 public class Log4jReader {
 
