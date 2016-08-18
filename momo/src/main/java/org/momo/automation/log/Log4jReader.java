@@ -39,7 +39,10 @@ public class Log4jReader {
 		Properties prop = new Properties();
 		try {
 			prop.load(new FileInputStream(this.Log4j_Configuration_Path));
-			prop.setProperty(this.getPropertiesFileKey(prop), "logs/" + DateUtils.getTime("yyyy-MM-dd") + ".log");
+			String logNameKey = this.getPropertiesFileKey(prop);
+			if (logNameKey != null) {
+				prop.setProperty(this.getPropertiesFileKey(prop), "logs/" + DateUtils.getTime("yyyy-MM-dd") + ".log");
+			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
